@@ -12,14 +12,23 @@ function Events() {
     fetchEvents();
   }, []);
 
-  const fetchEvents = async () => {
-    try {
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/events`);
+const fetchEvents = async () => {
+  try {
+    const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/events`);
+    console.log("Fetched data:", res.data); // <-- important!
+
+    if (Array.isArray(res.data)) {
       setEvents(res.data);
-    } catch (error) {
-      console.error("Failed to fetch events", error);
+    } else {
+      console.warn("API did not return an array", res.data);
+      setEvents([]); // fallback to prevent crash
     }
-  };
+  } catch (error) {
+    console.error("Fetch failed", error);
+    setEvents([]); // fallback to prevent crash
+  }
+};
+
 
   const handleDelete = async (id) => {
     try {
