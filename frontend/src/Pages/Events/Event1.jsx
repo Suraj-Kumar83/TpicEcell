@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
 
+
 function Events() {
   const navigate = useNavigate();
   const [events, setEvents] = useState([]);
@@ -11,7 +12,6 @@ function Events() {
   useEffect(() => {
     fetchEvents();
   }, []);
-
 const fetchEvents = async () => {
   try {
     const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/events`);
@@ -32,7 +32,7 @@ const fetchEvents = async () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/api/events/${id}`);
+      await axios.delete(`${import.meta.env.VITE_API_BASE_URL}/api/events/${id}`);
       setEvents((prevEvents) => prevEvents.filter((event) => event.id !== id));
       alert("Event deleted successfully!");
     } catch (error) {

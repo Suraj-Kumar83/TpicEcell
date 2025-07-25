@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+
+
 function AddEvent() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -37,7 +39,7 @@ function AddEvent() {
       data.append('location', formData.location);
       if (imageFile) data.append('image', imageFile);
 
-      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/events`, data);
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/events`, data);
       alert("Event added successfully!");
       navigate("/events");
     } catch (error) {

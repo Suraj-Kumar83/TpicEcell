@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+
+
 function EditEvent() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -20,7 +22,7 @@ function EditEvent() {
 
   const fetchEvent = async () => {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/events`);
+      const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/events`);
       const event = res.data.find(e => e.id === parseInt(id));
       if (event) {
         setFormData(event);
@@ -53,11 +55,11 @@ function EditEvent() {
         const uploadData = new FormData();
         uploadData.append('file', newImageFile);
 
-        const uploadRes = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/upload`, uploadData);
+        const uploadRes = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/upload`, uploadData);
         imageUrl = uploadRes.data.imageUrl;
       }
 
-      await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/events/${id}`, {
+      await axios.put(`${import.meta.env.VITE_API_BASE_URL}/api/events/${id}`, {
         ...formData,
         image: imageUrl
       });
