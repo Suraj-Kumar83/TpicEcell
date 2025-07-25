@@ -14,7 +14,7 @@ function Events() {
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/events");
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/events`);
       setEvents(res.data);
     } catch (error) {
       console.error("Failed to fetch events", error);
@@ -23,7 +23,7 @@ function Events() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/events/${id}`);
+      await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/api/events/${id}`);
       setEvents((prevEvents) => prevEvents.filter((event) => event.id !== id));
       alert("Event deleted successfully!");
     } catch (error) {

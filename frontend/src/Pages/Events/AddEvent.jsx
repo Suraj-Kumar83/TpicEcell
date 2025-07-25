@@ -37,7 +37,7 @@ function AddEvent() {
       data.append('location', formData.location);
       if (imageFile) data.append('image', imageFile);
 
-      await axios.post("http://localhost:5000/api/events", data);
+      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/events`, data);
       alert("Event added successfully!");
       navigate("/events");
     } catch (error) {

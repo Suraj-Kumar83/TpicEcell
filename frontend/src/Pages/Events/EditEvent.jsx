@@ -20,7 +20,7 @@ function EditEvent() {
 
   const fetchEvent = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/events`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/events`);
       const event = res.data.find(e => e.id === parseInt(id));
       if (event) {
         setFormData(event);
@@ -53,11 +53,11 @@ function EditEvent() {
         const uploadData = new FormData();
         uploadData.append('file', newImageFile);
 
-        const uploadRes = await axios.post('http://localhost:5000/api/upload', uploadData);
+        const uploadRes = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/upload`, uploadData);
         imageUrl = uploadRes.data.imageUrl;
       }
 
-      await axios.put(`http://localhost:5000/api/events/${id}`, {
+      await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/events/${id}`, {
         ...formData,
         image: imageUrl
       });
