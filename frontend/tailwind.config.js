@@ -14,7 +14,8 @@ export default {
         base: "#f1f4f1",
         base2: "#FFFF00",
         base3: "#13eb98ff",
-        base4:"#114b2c"
+        base4:"#114b2c",
+        base5:"#ff0000",
       },
       spacing: {},
       fontFamily: {

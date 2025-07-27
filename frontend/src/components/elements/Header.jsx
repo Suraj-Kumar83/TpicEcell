@@ -77,7 +77,7 @@ const Header = () => {
                   ) : user && role === 'admin' ? (
                     <button
                       onClick={handleLogout}
-                      className="text-white hover:text-white duration-200 font-poppins"
+                      className="text-base5 hover:text-white duration-200 font-poppins"
                     >
                       Logout
                     </button>
