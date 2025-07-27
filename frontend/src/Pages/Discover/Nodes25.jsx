@@ -1,11 +1,11 @@
 import React from 'react'
 import StudentPresident25 from '../../components/important/StudentPresident25';
-import Technology from '../../components/important/Technology';
-import MediaandBranding from '../../components/important/MediaandBranding';
 import EventPR25 from '../../components/important/Event_PR25';
 import SocialMedia25 from '../../components/important/SocialMedia25';
 import DesignBranding25 from '../../components/important/Design_Branding25';
 import ResearchDev25 from '../../components/important/ResearchTeam25';
+import EventLogistics25 from "../../components/important/EventLogistics25.jsx"
+
 
 
 function Nodes25() {
@@ -20,6 +20,7 @@ function Nodes25() {
         <EventPR25/>
         <DesignBranding25/>
       <SocialMedia25/>
+      <EventLogistics25/>
       
       </div>
     </div>
