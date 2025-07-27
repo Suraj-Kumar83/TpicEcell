@@ -26,7 +26,7 @@ const teamMembers = [
   {
     img: suraj,
     name: "Suraj Kumar",
-    role: "Student Head & Co-ordinator,\nTechnology Development",
+    role: "Student Overall Head & Co-ordinator,\nTechnology Development",
     email: "mailto:surajsingh66012@gmail.com",
     linkedin: "https://www.linkedin.com/in/suraj-kumar-6727252bb/",
     instagram: "https://www.linkedin.com/in/suraj-kumar-6727252bb/",

@@ -21,7 +21,6 @@ function Nodes25() {
         <DesignBranding25/>
       <SocialMedia25/>
       <EventLogistics25/>
-      
       </div>
     </div>
     </>
