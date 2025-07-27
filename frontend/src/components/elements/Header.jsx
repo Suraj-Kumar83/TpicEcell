@@ -105,7 +105,7 @@ const Header = () => {
             <div className="lg:hidden mt-4 px-4">
               <ul className="flex flex-col space-y-4 font-bold text-white text-[18px] font-poppins">
                 <li><NavLink to="/" onClick={toggleSideBar}>Home</NavLink></li>
-                <li><NavLink to="/discover/who-we-are" onClick={toggleSideBar}>Discover</NavLink></li>
+                <li><NavLink to="/discover/who-we-are" onClick={toggleSideBar}>E-Cell</NavLink></li>
                 <li><NavLink to="/initiatives" onClick={toggleSideBar}>Initiatives</NavLink></li>
                 <li><NavLink to="/events" onClick={toggleSideBar}>Events</NavLink></li>
                 <li><NavLink to="/gallery" onClick={toggleSideBar}>Gallery</NavLink></li>
