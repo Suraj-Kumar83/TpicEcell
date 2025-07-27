@@ -14,6 +14,8 @@ import bharat from "../../assets/bharat.jpg";
 import arunabh from "../../assets/arunabh.jpg";
 import raj from "../../assets/raj.jpg";
 import devash from "../../assets/devash.jpg";
+import abhishek from "../../assets/abhishek.jpg";
+import shivam from "../../assets/shivam.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
@@ -61,6 +63,14 @@ const teamMembers = [
     email: "mailto:anurag.aditya1281@gmail.com",
     linkedin: "https://www.linkedin.com/in/anurag-aditya-soc",
     instagram: "https://www.instagram.com/sarthak_raj79",
+  },
+ {
+    img: abhishek,
+    name: "Abhishek Maurya",
+    role: "Student Co-ordinator,\nDesign & Branding Head",
+    email: "mailto:maurya63abhishek@gmail.com",
+    linkedin: "https://www.linkedin.com/in/abhishek-maurya63?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "https://www.instagram.com/abhishek_maurya63?igsh=amg1NmJlYjE4ZDF5",
   },
 
    {
@@ -126,6 +136,14 @@ const teamMembers = [
     email: "mailto:shubnegi1004@gmail.com",
     linkedin: "https://www.linkedin.com/in/shubham-negi-8709a7223",
     instagram: "https://www.instagram.com/iamshubhamnegi",
+  },
+  {
+    img: shivam,
+    name: "Shivam Kumar",
+    role: "Student Co-ordinator,\n Event & Logistics Head",
+    email: "mailto:shivambtechcse2023@gmail.com",
+    linkedin: "https://www.linkedin.com/in/shivam-sudo",
+    instagram: "https://www.instagram.com/_eternalshivam/",
   },
  
   {
