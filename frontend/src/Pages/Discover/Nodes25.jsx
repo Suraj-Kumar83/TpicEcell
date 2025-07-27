@@ -16,10 +16,10 @@ function Nodes25() {
       </div>
       <div className='mt-8 sm:mt-12'>
         <StudentPresident25/>
-        <ResearchDev25/>
         <EventPR25/>
         <DesignBranding25/>
       <SocialMedia25/>
+      <ResearchDev25/>
       <EventLogistics25/>
       </div>
     </div>

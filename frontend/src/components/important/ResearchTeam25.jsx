@@ -10,13 +10,13 @@ function ResearchDev25() {
         <div className="flex flex-wrap flex-col justify-center item-center text-center">
           <div className="flex flex-wrap flex-col justify-center items-center text-center">
             <h1 className="text-base4 font-SFPro text-[20px] sm:text-[24px] font-bold leading-[135%]">
-              Research & Development (R&D)
+              Research & Content (R&C)
             </h1>
             <div className="text-center mt-4 inline-block h-[2px] w-[160px] bg-base4 rounded-lg"></div>
           </div>
           {/* <img src={team} alt="statrtup" width={1200} height={1200} className="w-[360px] items-center" /> */}
           <p className="mt-4 text-base4 text-justify text-[14px] sm:text-[18px] -tracking-tight leading-[135%]">
-           The Research and Development Team forms the intellectual foundation of the E-Cell. This team is responsible for exploring new ideas, conducting relevant market and startup research, and providing insights that drive innovation, strategy, and decision-making within the cell.
+           The Research and Content Team forms the intellectual foundation of the E-Cell. This team is responsible for exploring new ideas, conducting relevant market and startup research, and providing insights that drive innovation, strategy, and decision-making within the cell.
           </p>
         </div>
         <div className="mt-12 flex flex-wrap flex-col w-full justify-center items-center ">
