@@ -21,7 +21,8 @@ function Footer() {
                 </h2>
                 <p className="text-white font-poppins text-[14px] sm:text-[16px] font-semibold leading-[135%]">
                   Hemvati Nandan Bahuguna Garhwal University, <br /> 1st Floor, USIC Building, Chauras
-                  Campus, <br /> Srinagar (Garhwal), Uttarakhand-246174
+                  Campus, <br /> Srinagar (Garhwal), Uttarakhand-246174.<br/>
+                  E-mail:surajsingh66012@gmail.com
                 </p>
               </div>
             </nav>
@@ -192,7 +193,7 @@ function Footer() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/tpichnbgu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        href="https://www.linkedin.com/company/technology-pre-incubation-cell-hnbgu/posts/?feedView=all"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white hover:text-base2 transition-colors duration-300"
@@ -219,7 +220,7 @@ function Footer() {
               Designed and Developed by TPIC Tech Team
             </h3>
             <h3 className="text-white/50 font-poppins text-[12px] font-semibold leading-[100%] mt-4 ">
-              Credits:  <br /> <span className="font-bold text-white">Dr. Alok Negi </span> (Logo Design) <br /> <span className="font-bold text-white">Graphikx Studio </span> (UI Design)
+              Credits:  <br /> <span className="font-bold text-white">Dr. Alok Negi </span> (Logo Design) <br /> <span className="font-bold text-white">Graphikx Studio </span> (UI Design) <br/>&<br/><a href="https://my-portfolio-ebon-three-20.vercel.app/" alt="portfoilio links" style={{textDecoration:"none", color:"white"}} >Suraj Kumar,</a> B.Tech. 4th Year (CSE). 
             </h3>
           </div>
         </div>
