@@ -15,7 +15,7 @@ function WhoWeAre() {
               </h1>
               
               <p className="text-black text-[16px] md:text-[20px] leading-[135%] mt-6 text-justify">
-              The Technology Pre-Incubation Cell (TPIC) is a student-run initiative designed to nurture and develop early-stage tech ideas and innovations. It serves as a foundational platform for aspiring entrepreneurs, researchers, and students to refine their concepts and transform them into viable business models.
+              The Technology Pre-Incubation Cell (TPIC) is a faculty & student-run initiative designed to nurture and develop early-stage tech ideas and innovations. It serves as a foundational platform for aspiring entrepreneurs, researchers, and students to refine their concepts and transform them into viable business models.
 
               </p>
               <button className="mt-8 border-2  border-slate-700 hover:border-black bg-slate-700 hover:bg-black text-white hover:text-white py-1 sm:py-2 px-8 rounded-xl font-poppins font-light  text-[12px] sm:text-[16px]">

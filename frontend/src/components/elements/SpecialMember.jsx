@@ -16,9 +16,9 @@ function SpecialMember() {
       img: coordinator,
       name: "Rahul Singh",
       role: "Research Assistant",
-      email: "mailto:rahul@email.com",
-      linkedin: "https://www.linkedin.com/in/r4ravikumar",
-      instagram: "https://www.instagram.com/_jha.ravi",
+      email: "mailto:rgusain610@gmail.com",
+      linkedin: "https://www.linkedin.com/in/rahul-singh-rs1106?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagram: "https://www.instagram.com/ray_eternal_life?igsh=eTlydmdyaHdjMmls",
     },
   ];
 
