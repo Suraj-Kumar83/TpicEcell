@@ -114,7 +114,8 @@ const Header = () => {
                   {loading ? (
                     <span>Loading...</span>
                   ) : user && role === 'admin' ? (
-                    <button onClick={handleLogout}>Logout</button>
+                    <button onClick={handleLogout}
+                     className="text-base5 hover:text-white duration-200 font-poppins">Logout</button>
                   ) : (
                     <NavLink to="/admin-login" onClick={toggleSideBar}>Admin Login</NavLink>
                   )}
