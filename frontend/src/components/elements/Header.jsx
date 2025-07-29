@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import TPIClogo from "../../assets/TPIC_logo-removebg-preview.png";
+import TPIClogo from "../../assets/TPIC_HNBGU_Logo.png";
 import { AuthContext } from "../../contexts/AuthContext";
 
 const Header = () => {
