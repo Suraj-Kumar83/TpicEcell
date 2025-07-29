@@ -2,6 +2,7 @@ import React, { useEffect, useState,useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
+import image from "../../assets/event1b.jpg";
 
 function Events() {
   const navigate = useNavigate();
@@ -22,12 +23,40 @@ const fetchEvents = async () => {
       ? res.data.data
       : [];
 
-    setEvents(eventData);
+    
+    if (eventData.length === 0) {
+      setEvents([
+        {
+          id: "default-ideathon-2025",
+          title: "IDEATHON 2025",
+          description:
+            "The Technology Pre-Incubation Cell (TPIC), HNBGU, in collaboration with iHUB DivyaSampark, IIT Roorkee, organized the IDEATHON 2025 on April 17. Fourteen teams pitched innovative ideas in areas like AI, IoT, Blockchain, and Sustainability. Team “The Endurance” (ICFAI) won first place. The hybrid event featured expert judges, guest speakers, and was hosted by Rahul Singh with strong team support, concluding with prize distribution to winners.",
+          date: "2025-04-17",
+          location: "TPIC, HNBGU, Srinagar, UK",
+          image: {image}, 
+        },
+      ]);
+    } else {
+      setEvents(eventData);
+    }
   } catch (error) {
     console.error("Failed to fetch events", error);
-    setEvents([]); 
+
+    
+    setEvents([
+      {
+        id: "default-ideathon-2025",
+        title: "IDEATHON 2025",
+        description:
+          "The Technology Pre-Incubation Cell (TPIC), HNBGU, in collaboration with iHUB DivyaSampark, IIT Roorkee, organized the IDEATHON 2025 on April 17. Fourteen teams pitched innovative ideas in areas like AI, IoT, Blockchain, and Sustainability. Team “The Endurance” (ICFAI) won first place. The hybrid event featured expert judges, guest speakers, and was hosted by Rahul Singh with strong team support, concluding with prize distribution to winners.",
+        date: "2025-04-17",
+        location: "TPIC, HNBGU, Srinagar, UK",
+        image: {image}, 
+      },
+    ]);
   }
 };
+
 
 
   const handleDelete = async (id) => {
