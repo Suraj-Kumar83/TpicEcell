@@ -31,15 +31,13 @@ const fetchEvents = async () => {
         "The Technology Pre-Incubation Cell (TPIC), HNBGU, in collaboration with iHUB DivyaSampark, IIT Roorkee, organized the IDEATHON 2025 on April 17. Fourteen teams pitched innovative ideas in areas like AI, IoT, Blockchain, and Sustainability. Team “The Endurance” (ICFAI) won first place. The hybrid event featured expert judges, guest speakers, and was hosted by Rahul Singh with strong team support, concluding with prize distribution to winners.",
       date: "2025-04-17",
       location: "TPIC, HNBGU, Srinagar, UK",
-      image: {image}
+      image: image,
     };
 
-    setEvents([ideathonEvent, ...eventData]); // prepend
-    // or: setEvents([...eventData, ideathonEvent]); // append
+    setEvents([ideathonEvent, ...eventData]); 
+   
   } catch (error) {
     console.error("Failed to fetch events", error);
-
-    // Fallback: show only the hardcoded event
     setEvents([
       {
         id: "default-ideathon-2025",
@@ -48,7 +46,7 @@ const fetchEvents = async () => {
           "The Technology Pre-Incubation Cell (TPIC), HNBGU, in collaboration with iHUB DivyaSampark, IIT Roorkee, organized the IDEATHON 2025 on April 17. Fourteen teams pitched innovative ideas in areas like AI, IoT, Blockchain, and Sustainability. Team “The Endurance” (ICFAI) won first place. The hybrid event featured expert judges, guest speakers, and was hosted by Rahul Singh with strong team support, concluding with prize distribution to winners.",
         date: "2025-04-17",
         location: "TPIC, HNBGU, Srinagar, UK",
-        image: {image},
+        image: image,
       },
     ]);
   }
