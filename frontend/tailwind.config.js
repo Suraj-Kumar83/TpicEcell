@@ -11,7 +11,7 @@ export default {
         black: "#1E1E1E",
         lightBlue: "#87CEFA",
         blue: "#007FFF",
-        base: "#bae1baff",
+        base: "#f1f4f1",
         base2: "#FFFF00",
         base3: "#13eb98ff",
         base4:"#114b2c",
