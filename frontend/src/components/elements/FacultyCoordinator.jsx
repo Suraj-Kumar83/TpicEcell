@@ -1,6 +1,8 @@
 import React from "react";
 import coordinator from "../../assets/Teacher Coordinator.jpg";
 import coordinator1 from "../../assets/rohitmehersir.jpg";
+import coordinator2 from "../../assets/coordinator2.jpg";
+import coordinator3 from "../../assets/coordinator3.jpg";
 
 function FacultyCoordinator() {
   return (
@@ -20,6 +22,16 @@ function FacultyCoordinator() {
             {
               img: coordinator1,
               name: "Dr. Rohit Meher",
+              role: "Faculty Co-ordinator",
+            },
+            {
+              img: coordinator2,
+              name: "Dr. Varun Barthwal",
+              role: "Faculty Co-ordinator",
+            },
+            {
+              img: coordinator3,
+              name: "Dr. Bhaskaran",
               role: "Faculty Co-ordinator",
             }
           ].map((faculty, index) => (
